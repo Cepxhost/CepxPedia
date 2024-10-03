@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Link stylesheet -->
+    <title>cepx pedia Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h2>Login</h2><br>
+            <form id="loginForm">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Username" required>
+                
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password" required>
+                
+                <div class="buttons">
+                    <button type="submit" class="btn">Login</button>
+                    <a href="menu.html"><button type="button" class="btn">Lewati</button></a>
+                </div>
+            </form>
+
+            <p>Belum memiliki akun? <a href="#registerSection">Registrasi akun Anda</a></p> <!-- Tautan ke bagian registrasi -->
+        </div>
+    </div>
+    
+    <!-- Bagian Registrasi Akun -->
+    <div class="container" id="registerSection">
+        <div class="login-box">
+            <h2>Registrasi Akun</h2><br>
+            <form id="registrationForm">
+                <label for="newUsername">Username</label>
+                <input type="text" class="form-control" id="newUsername" placeholder="Username" required>
+                
+                <label for="newPassword">Password</label>
+                <input type="password" class="form-control" id="newPassword" placeholder="Password" required>
+                
+                <div class="buttons">
+                    <button type="submit" class="btn">Daftar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="bg-container">
+        <div class="bg" style="background-image: url('fbokpeaf.jpg');"></div>
+    </div>
+
+    <script>
+        // Daftar akun
+        const accounts = [
+            { username: "admin", password: "admin123" }
+        ];
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const loginForm = document.getElementById("loginForm");
+            const registrationForm = document.getElementById("registrationForm");
+
+            // Login
+            loginForm.addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                const username = document.getElementById("username").value;
+                const password = document.getElementById("password").value;
+
+                if (username === "" || password === "") {
+                    alert("Silakan isi kedua kolom.");
+                    return;
+                }
+
+                const account = accounts.find(acc => acc.username === username && acc.password === password);
+                if (account) {
+                    alert("Login berhasil! Mengarahkan ke menu...");
+                    window.location.href = "menu.html";
+                } else {
+                    alert("Username atau password tidak valid. Silakan coba lagi.");
+                }
+            });
+
+            // Registrasi
+            registrationForm.addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                const newUsername = document.getElementById("newUsername").value;
+                const newPassword = document.getElementById("newPassword").value;
+
+                if (newUsername === "" || newPassword === "") {
+                    alert("Silakan isi kedua kolom.");
+                    return;
+                }
+
+                const existingAccount = accounts.find(acc => acc.username === newUsername);
+                if (existingAccount) {
+                    alert("Username sudah digunakan. Silakan coba username lain.");
+                    return;
+                }
+
+                accounts.push({ username: newUsername, password: newPassword });
+                alert("Registrasi berhasil! Silakan login.");
+                registrationForm.reset();
+            });
+        });
+    </script>
+    
+    &copy; cepx pedia
+</body>
+</html>

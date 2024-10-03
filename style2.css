@@ -1,0 +1,72 @@
+    body {
+    font-family: Arial, sans-serif;
+    color: white; 
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 120vh;
+    background-image: url('hvk0r1z.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-image: url('fbokpeaf.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 15px 20px; 
+    text-align: center; 
+    border-radius: 20px;
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: center; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 20px;
+    padding: 10px 0;
+    margin: 10px 0; 
+}
+
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.menu-item {
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+    border-radius: 10px;
+}
+
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.3); 
+}
+
+.content {
+    padding: 20px;
+    color: white;
+    font-weight: bold; 
+}
+
+.logo img {
+    width: 50px;
+}
+
+footer {
+    text-align: center; 
+    padding: 20px; 
+    color: white;
+}

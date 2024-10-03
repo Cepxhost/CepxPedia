@@ -1,0 +1,80 @@
+ h2 {
+   color:rgb(243, 238, 238);
+ }
+
+.buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 22px;
+    }
+    
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('https://pomf2.lain.la/f/fbokpeaf.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 50%;
+    height: 50%;
+    background-image: url('https://pomf2.lain.la/f/fbokpeaf.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border: 1px solid #b3aeae;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-control {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid wheat;
+}
+
+.btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    transition: backgroun-color0.3s;
+}
+.btn:hover {
+    background-color: #3e8e41;
+}
+
+.bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}

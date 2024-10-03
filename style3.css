@@ -1,0 +1,81 @@
+body, html {
+
+            margin: 0;
+
+            padding: 0;
+            height: 100%;
+        }
+        .video-background {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            color: wheat;
+            text-align: center;
+            padding: 20px;
+        }
+        .header {
+            background-image: url('fbokpeaf.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            padding: 15px 20px; 
+            display: center;
+            align-items: center; 
+            text-align: center;
+            border-radius: 20px;
+            font-size: 25px;
+        }
+        
+        .text-tebel {
+          font-weight: blod;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        tr, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ccc;
+            background-color: #ffffff;
+        }
+        th {
+            background-color: #007bff;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .button {
+            padding: 8px 15px;
+            background-color: #28a745;
+            color: wheat;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            justify-content: space-between;
+        }
+        .button-hover {
+            background-color: #218838;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
